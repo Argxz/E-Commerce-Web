@@ -1,0 +1,348 @@
+/* Header */
+
+/* css reset */
+* {
+    font-family: "Roboto", sans-serif;
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+}
+
+.card {
+    border: 1px solid #ddd; /* Garis tepi */
+    border-radius: 8px; /* Sudut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    padding: 20px; /* Ruang dalam */
+    width: 250px; /* Lebar kartu */
+    margin: 30px; /* Margin */
+    background-color: #fff; /* Warna latar belakang */
+    text-align: center;
+}
+
+.card img {
+    width: 80%; /* Gambar mengisi lebar kartu */
+    border-radius: 8px; /* Sudut gambar */
+}
+
+.card-content {
+    text-align: center; /* Pusatkan konten */
+}
+
+.card h2 {
+    font-size: 24px; /* Ukuran judul */
+    margin-top: 0; /* Hapus margin atas */
+}
+
+.card p {
+    font-size: 16px; /* Ukuran teks */
+    color: #666; /* Warna teks */
+}
+
+.card .price {
+    font-size: 18px; /* Ukuran harga */
+    font-weight: bold; /* Tebal */
+    color: #333; /* Warna harga */
+}
+
+.card .btn {
+    display: inline-block; /* Tampilkan sebagai inline-block */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    text-decoration: none; /* Hapus garis bawah */
+    border-radius: 5px; /* Sudut tombol */
+    transition: background-color 0.3s; /* Transisi saat hover */
+}
+
+.card .btn:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+.tulisan{
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #45a049;
+}
+.navigation-header {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+    padding: 1rem;
+    background-color: #00316d; */
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.navigation-header .navigation-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+.navigation-header .navigation-list li {
+    list-style-type: none;
+}
+.navigation-header .navigation-list li a {
+    padding: 0.5rem 1rem;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease-in-out;
+}
+.navigation-header .navigation-list li:hover a {
+    background-color: #033162;
+    color: white;
+}
+.title-ecom{
+    margin-left : 250px;
+}
+.title-ecom a h1{
+    color: #000;
+    font-weight: bolder;
+    font-size:50px;
+    font-family: 'Quicksand';
+}
+.navigation.a {
+    text-decoration: none;
+    border: 3px solid;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+  /* Main */
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.review-section {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Pusatkan konten secara horizontal */
+    flex-wrap: wrap; /* Periksa untuk pembebasan responsif */
+    gap: 5px; /* Jarak antar elemen */
+    padding: 5px; /* Ruang dalam */
+}
+
+.package-header .container {
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+
+.package-header .container .tulisan{
+    border: 10px solid #1c047f;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 15px; /* Change the border radius to 15px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 99);
+}
+
+.package-header .container .tulisan h1{
+    color: rgb(0, 0, 0);
+
+}
+
+.our-package {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 100vh;
+}
+
+.package-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+    font-size: 100px;
+    padding: 30px 0;
+}
+
+.hero .review-section .asidee{
+    border: 1px solid #ddd; /* Garis tepi */
+    border-radius: 8px; /* Sudut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    padding: 20px; /* Ruang dalam */
+    width: 100%; /* Lebar kartu */
+    margin: 30px; /* Margin */
+    background-color: #fff; /* Warna latar belakang */
+    text-align: center;
+}
+.hero .review-section .asidee .another-product{
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Pusatkan konten secara horizontal */
+    flex-wrap: wrap; /* Periksa untuk pembebasan responsif */
+    gap: 5px; /* Jarak antar elemen */
+    padding: 5px; /* Ruang dalam */
+}
+.logo {
+    height: 60px;
+    }
+
+    footer{
+        padding: 10px;
+        color: white;
+        background-color: #000000;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    footer p {
+        font-weight: bold;
+    }
+    @media screen and (max-width: 768px) {
+        header .navigation-header{
+            flex-direction: column;
+        }
+        header .navigation-header .navigation-list ul {
+            flex-wrap: wrap;
+            column-gap: 0.5rem;
+        }
+        main .package-header .container .tulisan h1{
+            font-size : 1.5rem;
+        }
+        header .navigation-header .title-ecom h1{
+            font-size: 1.5rem;
+        }
+        main {
+            padding: 1rem 3rem;
+        }
+        main .content {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
